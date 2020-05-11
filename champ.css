@@ -1,0 +1,61 @@
+@charset "UTF-8";
+button, .message {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body {
+  background-color: #00D2A6;
+}
+
+div {
+  background-color: #33FFD4;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+}
+div p {
+  text-align: center;
+  font-size: 24px;
+  color: black;
+}
+div ul li {
+  text-align: left;
+  color: black;
+  font-size: 24px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+a {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+
+a::before {
+  content: "⇒Click here ";
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+
+button {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 10%;
+  background-color: #00AFD2;
+}
+
+button:hover {
+  background-color: yellow;
+}
+
+/*# sourceMappingURL=champ.css.map */
