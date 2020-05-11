@@ -5,11 +5,11 @@ button, .message {
 }
 
 body {
-  background-color: #9C008F;
+  background-color: #F831E7;
 }
 
 div {
-  background-color: #FA49EC;
+  background-color: #FE89F4;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -55,7 +55,7 @@ button {
   margin-right: auto;
   width: 30%;
   height: 10%;
-  background-color: #FA49EC;
+  background-color: #FE89F4;
 }
 
 button:hover {

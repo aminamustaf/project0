@@ -1,5 +1,5 @@
 $basic: black;
-$backgroundcolor: #FA49EC;
+$backgroundcolor: #FE89F4;
 $fontsize: 24px;
 $align: center;
  
@@ -12,7 +12,7 @@ $align: center;
 }
 
 body {
-background-color: #9C008F;
+background-color: #F831E7;
 }
 
 div{
@@ -60,7 +60,7 @@ button{
 	  margin-right: auto;
     width:30%;
     height:10%;
-    background-color: #FA49EC;
+    background-color: $backgroundcolor;
    	}
 button:hover{
    	background-color: yellow;
