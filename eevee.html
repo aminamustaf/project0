@@ -1,29 +1,54 @@
 <html>
 <head>
+    <link rel="stylesheet" href="eevee.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-    	@media(min-width:500px){
-
-    	}
-    	@media(max-width:499px){
-
-    	}
-
-    	div{
-    		background-color: pink;
-    		width: 100px;
-    		height: 400px;
-    		padding:20px;
-    		text-align: center;
-    	}
+    	.message{
+            @extend %equal-heights;
+        }
+  		img{
+  			width: 100%;
+    		height:50vh;
+            object-fit: cover;
+  		}
+        .grid{
+            margin: auto; 
+            background-color: #00D2A6;
+            display: grid;
+            padding: 10px;
+            grid-column-gap: 20px;
+            grid-row-gap: 5px;
+            grid-template-columns: 330px 330px 330px;
+        }
     </style>
-        <div>Skip the Golden Retriever</div>
+        <title>Eevee the Tortoiseshell Cat</title>
+        <h1>Eevee the Tortoiseshell Cat</h1>
     </head>
     <body>
-        Hello, world!
-        <a href="index.html">Click here to go back to the homepage!</a>
-        <a href="champ.html">Click here to see my dog, Champ!</a>
-        <a href="skip.html">Click here to see my dog, Skip!</a>
+         <div class="message">
+        	<p>Hi everybody, my name is Eevee. I am a 5 year old Tortoiseshell cat. My mom adopted me last  year and I have been enjoying all of the food and beds around here. Champ is very loud and annoying, though. I do not care for dog shenanigans.</p>
+        	<p>Unfortunately I did not know Skip, but I think we would have gotten along really well. I am always sleeping in the bathroom he used to sleep in. Obviously I am adorable, what else is there to say?</p>
+        	<span class="grid">
+        	   <img src= "IMG_1233.JPG" alt="Eevee1">
+        	   <img src= "IMG_1080.JPG" alt="Eevee2">
+        	   <img src= "3BE86367-77D7-4921-AAA9-FF1F0EA55500.JPG" alt="Eevee3">
+            </span>
+        </div>
+        <div>
+        	<p>Here are a few of my favorite things, in order of course, because I am very picky:</p>
+        	<ol>
+        		<li>Catnip</li>
+        		<li>Food</li>
+        		<li>Sleeping</li>
+        		<li>Hair ties</li>
+        		<li>My mom</li>
+        	</ol>
+        </div>
+        <p>
+        <button><a href="index.html">to go back to the homepage!</a></button>
+        <button><a href="champ.html">to see Champ!</a></button>
+        <button><a href="skip.html">to see Skip!</a></button>
+   	 </p>
     </body>
 
 
