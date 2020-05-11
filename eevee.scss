@@ -1,5 +1,5 @@
 $basic: black;
-$backgroundcolor: #33FFD4;
+$backgroundcolor: #FA49EC;
 $fontsize: 24px;
 $align: center;
  
@@ -12,11 +12,13 @@ $align: center;
 }
 
 body {
-background-color: #00D2A6;
+background-color: #9C008F;
 }
 
 div{
   	background-color: $backgroundcolor;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
    	height: auto;
    	padding:20px;
@@ -55,10 +57,10 @@ a::before{
 button{
     @extend %equal-heights;
     margin-left: auto;
-	margin-right: auto;
+	  margin-right: auto;
     width:30%;
     height:10%;
-    background-color: #00AFD2;
+    background-color: #FA49EC;
    	}
 button:hover{
    	background-color: yellow;
