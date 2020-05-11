@@ -1,92 +1,50 @@
 <html>
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="champ.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-    	.container{
-    		display:flex;
-    		flex-wrap:wrap;
-    	}
-  		div{
-  			margin-left: auto;
-  			margin-right: auto;
-  			background-color: teal;
-    		width: 75%;
-    		height: 75%;
-    		padding:20px;
-    		text-align: center;
-    		display: inline-block;
+    	.message{
+            @extend %equal-heights;
+        }
+  		img{
+  			width: 100%;
+    		height:50vh;
+            object-fit: cover;
   		}
-  		.img-fluid{
-  			margin-left: auto;
-  			margin-right: auto;
-  			width: 20%;
-    		height: 45%;
-    		display:inline-block;
-  		}
-    	h1{
-  			text-align:center;
-    		font-weight: bold;
-    		color:teal;
-    	}
-    	p {
-    		text-align:center;
-    		font-size: 24px;
-    		color:black;
-    	}
-    	a{
-    		font-weight:bold;
-    		font-size:20px;
-    		color:black;
-    	}
-    	a::before{
-    		content:"\21d2 Click here ";
-    		font-weight:bold;
-    		font-size:20px;
-    		color:black;
-    	}
-    	button{
-    		margin-left: auto;
-  			margin-right: auto;
-    		width:30%;
-    		height:10%;
-    		background-color: pink;
-    	}
-    	button:hover{
-    		background-color: yellow;
-    	}
-    	ul li{
-    		text-align:left;
-    		color:black;
-    		font-size:24px;
-    	}
-    	p + ul {
-  		  margin-top: -210px;
-		}
+        .grid{
+            margin: auto; 
+            background-color: #00D2A6;
+            display: grid;
+            padding: 10px;
+            grid-column-gap: 20px;
+            grid-row-gap: 5px;
+            grid-template-columns: 250px 250px 250px 250px;
+        }
     </style>
         <title>Champ the Norwegian Elkhound</title>
         <h1>Champ the Norwegian Elkhound</h1>
     </head>
     <body>
-        <div class="container">
+        <div class="message">
         	<p>Hi everybody, my name is Champ. I am a 7 year old Norwegian Elkhound. I was adopted by my family when I was 2 years old. I had a pretty rough life before then. My past owners always kept me outside and treated me poorly, so I was a bit anxious opening up to my new family. </p>
         	<p>I can say now that I am super comfortable in my home with my pack. I joined the family when Skip and Doodles were around! I really miss them but I am glad we got Eevee last year so I have a new friend to play with! I don't think she liked me at first because of my loud bark, but we play together all the time now!</p>
-        	<img src= "IMG_2608.JPG" class="img-fluid" alt="Champ1">
-        	<img src= "IMG_0528.PNG" class="img-fluid" alt="Champ2">
-        	<img src= "IMG_0142.jpg" class="img-fluid" alt="Champ3">
-        	<img src= "IMG_0046.JPG" class="img-fluid" alt="Champ3">
-        	<img src= "IMG_0938.JPG" class="img-fluid" alt="Champ3">
+        	<span class="grid">
+            <img src= "IMG_2608.JPG" alt="Champ1">
+        	   <img src= "IMG_0142.jpg" alt="Champ2">
+        	   <img src= "IMG_0046.JPG" alt="Champ3">
+        	   <img src= "IMG_0938.JPG" alt="Champ4">
+            </span>
         </div>
-        <div class="container">
-        	<p>Aren't I pretty? I'm sure you'd love to know more about me. Here are some of my favorite foods:
-        		<ul>
+        <div>
+        	<p>Aren't I pretty? I'm sure you'd love to know more about me. Here are some of my favorite foods:</p>
+        	<ul>
         		<li>Bananas</li>
         		<li>Apples</li>
         		<li>Green Beans</li>
         		<li>Bread</li>
         		<li>Kleenex</li>
         		<li>Shoes</li>
-        	</ul></p>
+        	</ul>
         </div>
         <p>
 		    <button><a href="index.html">to go to the homepage!</a></button>
