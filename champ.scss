@@ -28,8 +28,11 @@ div{
  		color:$basic;
 		}
 		ul li{
-   		 text-align:left;
-  		  color: $basic;
+   		 display:block;
+   		 list-style-position:inside;
+   		 padding:5px;
+   		 text-align:center;
+  		 color: $basic;
    		 font-size:$fontsize;
     	}
   }
