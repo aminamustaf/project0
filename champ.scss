@@ -1,0 +1,63 @@
+$basic: black;
+$backgroundcolor: #33FFD4;
+$fontsize: 24px;
+$align: center;
+ 
+%equal-heights {
+  display: flex;
+  flex-wrap: wrap;
+}
+.message{
+	@extend %equal-heights;
+}
+
+body {
+background-color: #00D2A6;
+}
+
+div{
+  	background-color: $backgroundcolor;
+    width: 100%;
+   	height: auto;
+   	padding:20px;
+    text-align: $align;
+    display: inline-block;
+    	p {
+ 		 text-align:$align;
+ 		 font-size: $fontsize;
+ 		color:$basic;
+		}
+		ul li{
+   		 text-align:left;
+  		  color: $basic;
+   		 font-size:$fontsize;
+    	}
+  }
+h1{
+  text-align:$align;
+  font-weight: bold;
+   color:$basic;
+   }
+
+a{
+	font-weight:bold;
+	font-size:20px;
+	color:$basic;
+  }
+a::before{
+	content:"\21d2 Click here ";
+	font-weight:bold;
+	font-size:20px;
+	color:$basic;
+}
+button{
+    @extend %equal-heights;
+    margin-left: auto;
+	margin-right: auto;
+    width:30%;
+    height:10%;
+    background-color: #00AFD2;
+   	}
+button:hover{
+   	background-color: yellow;
+   	}
