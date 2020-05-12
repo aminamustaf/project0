@@ -56,10 +56,13 @@ a::before{
 button{
     @extend %equal-heights;
     margin-left: auto;
-	margin-right: auto;
+	  margin-right: auto;
     width:30%;
     height:10%;
     background-color: #00AFD2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
    	}
 button:hover{
    	background-color: yellow;
