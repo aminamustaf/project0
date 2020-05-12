@@ -56,6 +56,9 @@ button {
   width: 30%;
   height: 10%;
   background-color: #FE89F4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button:hover {

@@ -61,6 +61,9 @@ button{
     width:30%;
     height:10%;
     background-color: $backgroundcolor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
    	}
 button:hover{
    	background-color: yellow;
