@@ -1,5 +1,5 @@
 @charset "UTF-8";
-button, .message {
+p button, .message {
   display: flex;
   flex-wrap: wrap;
 }
@@ -50,12 +50,15 @@ a::before {
   color: black;
 }
 
-button {
+p button {
   margin-left: auto;
   margin-right: auto;
   width: 30%;
   height: 10%;
   background-color: #FDF986;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button:hover {

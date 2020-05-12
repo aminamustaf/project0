@@ -54,6 +54,7 @@ a::before{
 	font-size:20px;
 	color:$basic;
 }
+p{
 button{
     @extend %equal-heights;
     margin-left: auto;
@@ -61,7 +62,11 @@ button{
     width:30%;
     height:10%;
     background-color: $backgroundcolor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
    	}
+}
 button:hover{
    	background-color: yellow;
    	}
