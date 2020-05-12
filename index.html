@@ -1,18 +1,71 @@
 <!DOCTYPE html>
 <html>
     <head>
-    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    	<link rel="stylesheet" href="index.css" type="text/css">
         <title>My Webpage</title>
+        <h1>My Webpage</h1>
         <style>
-
+		.message{
+            @extend %equal-heights;
+        }
+       
         </style>
     </head>
     <body>
-         <div class="container"> <p>Hello, world! Welcome to my webpage I have created to boast about a few of the marvelous creatures I have raised throughout my life. They include my first dog, a Golden Retriever named Skip. Then my second dog, a Norwegian Elkhound named Champ. Lastly is my Tortoiseshell kitty, Eevee (named appropriately after the pokemon).</p>
-        <p>Click on the links below to learn more about Champ, Skip, or Eevee!</p>
-        <p><a href="champ.html">Click here to see Champ!</a></p>
-        <p><a href="eevee.html">Click here to see Eevee!</a></p>
-		<p><a href="skip.html">Click here to see Skip!</a></p>
-    </div>
+         <div id="homepage">
+          <p>Hello, world! Welcome to my webpage I have created to boast about a few of the marvelous creatures I have raised throughout my life. They include my first dog, a Golden Retriever named Skip. Then my second dog, a Norwegian Elkhound named Champ. Lastly is my Tortoiseshell kitty, Eevee (named appropriately after the pokemon).</p> 
+       </div>
+       <div id="homepage">
+          <form>
+            <p>
+              Enter your pet's name, how old they are, and what animal they are!
+            </p>
+            <input type="text" placeholder="Pet's Name" name="name">
+            <input type="number" placeholder="Age" name="name">
+            <fieldset>
+                 <p>
+                   <label>Type of animal:</label>
+                    <select id = "myList">
+                     <option value = "1">Cat</option>
+                     <option value = "2">Dog</option>
+                    <option value = "3">Bird</option>
+                    <option value = "4">Reptile</option>
+                    <option value = "5">Other</option>
+             </select>
+          </p>
+       </fieldset>
+            <button>Submit</button>
+          </form>
+        </div>
+        <div id="homepage">
+            <p>Here is a table with some brief information about my pets. Click on the links below to learn more about Champ, Skip, or Eevee!</p>
+           <table>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Animal</th>
+              </tr>
+              <tr>
+                <td>Champ</td>
+                <td>7</td>
+                <td>Dog</td>
+              </tr>
+              <tr>
+                <td>Eevee</td>
+                <td>5</td>
+                <td>Cat</td>
+              </tr>
+              <tr>
+                <td>Skip</td>
+                <td>10</td>
+                <td>Dog</td>
+              </tr>
+            </table>
+       </div>
+        <p>
+        	<button><a href="champ.html">to see Champ!</a></p></button>
+           <button><a href="eevee.html">to see Eevee!</a></button>
+	       	<button><a href="skip.html">to see Skip!</a></button>
+        </p>
     </body>
 </html>
