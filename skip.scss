@@ -1,8 +1,9 @@
+
 $basic: black;
 $backgroundcolor: #FDF986;
 $fontsize: 24px;
 $align: center;
- 
+
 %equal-heights {
   display: flex;
   flex-wrap: wrap;
@@ -10,8 +11,7 @@ $align: center;
 .message{
 	@extend %equal-heights;
 }
-
-body {
+ body {
 background-color: #FFD92D;
 }
 
@@ -43,17 +43,33 @@ h1{
    color:$basic;
    }
 
-a{
-	font-weight:bold;
-	font-size:20px;
-	color:$basic;
+ @media(min-width:500px){
+          a{
+              font-weight:bold;
+              font-size:20px;
+              color:$basic;
+                    }
+          a::before{
+              content:"\21d2 Click here ";
+              font-weight:bold;
+              font-size:20px;
+              color:$basic;
+                  }
+       }
+ @media(max-width:499px){
+        a{
+          font-weight:bold;
+          font-size:10px;
+          color:red;
+          }
+        a::before{
+          content:"\21d2 Click here ";
+              font-weight:bold;
+              font-size:10px;
+              color:red;
+        }
   }
-a::before{
-	content:"\21d2 Click here ";
-	font-weight:bold;
-	font-size:20px;
-	color:$basic;
-}
+
 p{
 button{
     @extend %equal-heights;

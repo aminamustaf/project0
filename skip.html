@@ -19,6 +19,32 @@
             grid-row-gap: 5px;
             grid-template-columns: 300px 300px 300px;
         }
+ @media(min-width:700px){
+          a{
+              font-weight:bold;
+              font-size:20px;
+              color:$basic;
+                    }
+          a::before{
+              content:"\21d2 Click here ";
+              font-weight:bold;
+              font-size:20px;
+              color:$basic;
+                  }
+       }
+ @media(max-width:699px){
+        a{
+          font-weight:bold;
+          font-size:10px;
+          color:red;
+          }
+        a::before{
+          content:"\21d2 Click here ";
+              font-weight:bold;
+              font-size:10px;
+              color:red;
+        }
+  }
     </style>
         <title>Skip the Golden Retriever</title>
         <h1>Skip the Golden Retriever</h1>

@@ -37,19 +37,34 @@ h1 {
   color: black;
 }
 
-a {
-  font-weight: bold;
-  font-size: 20px;
-  color: black;
-}
+@media (min-width: 500px) {
+  a {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+  }
 
-a::before {
-  content: "⇒Click here ";
-  font-weight: bold;
-  font-size: 20px;
-  color: black;
+  a::before {
+    content: "⇒Click here ";
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+  }
 }
+@media (max-width: 499px) {
+  a {
+    font-weight: bold;
+    font-size: 10px;
+    color: red;
+  }
 
+  a::before {
+    content: "⇒Click here ";
+    font-weight: bold;
+    font-size: 10px;
+    color: red;
+  }
+}
 p button {
   margin-left: auto;
   margin-right: auto;
